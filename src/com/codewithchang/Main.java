@@ -70,8 +70,29 @@ public class Main {
         }
 
         boolean isCar = false;
-        if (isCar == true) {
+        if (isCar) {
             System.out.println("This is not supposed to happen.");
         }
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
+
+        // Challenge
+        double firstValue = 20.00d;
+        double secondValue = 80.00d;
+        double totalValue = (firstValue + secondValue) * 100.00d;
+        System.out.println("MyTotalValue = " + totalValue);
+        double totalValueModular = totalValue % 40.00d;
+        System.out.println("totalValueModular = " + totalValueModular);
+        boolean remainder = (totalValueModular == 0) ? true : false;
+        System.out.println(remainder);
+        if (!remainder) {
+            System.out.println("Got some remainder");
+        }
+
+
     }
 }
